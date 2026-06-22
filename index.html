@@ -1,0 +1,352 @@
+<!-- ========================= -->
+<!-- FILE 1 : index.html -->
+<!-- ========================= -->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bengkel Las Harapan Mandiri</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- LOADING -->
+<div id="loader">
+<div class="spinner"></div>
+</div>
+
+<!-- NAVBAR -->
+<header>
+
+<nav>
+
+<div class="logo">
+Harapan Mandiri
+</div>
+
+<div class="menu-btn" onclick="toggleMenu()">
+<i class="fas fa-bars"></i>
+</div>
+
+<ul id="menu">
+<li><a href="#home">Home</a></li>
+<li><a href="#tentang">Tentang Kami</a></li>
+<li><a href="#layanan">Layanan</a></li>
+<li><a href="#galeri">Galeri</a></li>
+<li><a href="#lokasi">Lokasi</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>
+Bengkel Las Harapan Mandiri
+</h1>
+
+<p>
+Spesialis Kanopi, Pagar, Teralis,
+Baja Ringan, Stainless Steel, Kitchen Set,
+Folding Gate, Rolling Door, Tangga, dan lainnya.
+</p>
+
+<a href="#" onclick="openModal()" class="btn">
+Konsultasi Gratis
+</a>
+
+<div class="hero-stats">
+
+<div class="stat">
+<h3>25+</h3>
+<p>Tahun Pengalaman</p>
+</div>
+
+<div class="stat">
+<h3>1000+</h3>
+<p>Proyek Selesai</p>
+</div>
+
+<div class="stat">
+<h3>3 Bulan</h3>
+<p>Garansi</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- TENTANG KAMI -->
+<section class="section fade" id="tentang">
+
+<h2 class="title">Tentang Kami</h2>
+
+<div class="about-modern">
+
+<p>
+Bengkel Las Harapan Mandiri telah melayani pelanggan sejak tahun <b>2001</b>.
+Kami bergerak di bidang konstruksi dan fabrikasi besi dengan layanan Kanopi,
+Pagar, Teralis, Railing Balkon, Tangga, Baja Ringan, Stainless Steel,
+Kitchen Set, Folding Gate dan berbagai pekerjaan las lainnya.
+
+Dengan pengalaman lebih dari 25 tahun, kami selalu mengutamakan kualitas,
+ketepatan waktu, harga kompetitif, dan kepuasan pelanggan.
+</p>
+
+<div class="about-stats">
+
+<div class="stat-box">
+<h3>25+</h3>
+<span>Tahun Pengalaman</span>
+</div>
+
+<div class="stat-box">
+<h3>1000+</h3>
+<span>Proyek Selesai</span>
+</div>
+
+<div class="stat-box">
+<h3>3 Bulan</h3>
+<span>Garansi Pekerjaan</span>
+</div>
+
+<div class="stat-box">
+<h3>24/7</h3>
+<span>Konsultasi Admin</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- LAYANAN -->
+<section class="section fade" id="layanan">
+
+<h2 class="title">Layanan Kami</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="img/IMG-20241128-WA0172.jpg">
+<h3>Kanopi</h3>
+</div>
+
+<div class="card">
+<img src="img/pager sultan.png">
+<h3>Pagar</h3>
+</div>
+
+<div class="card">
+<img src="img/IMG-20241228-WA0021.jpg">
+<h3>Railing Balkon</h3>
+</div>
+
+<div class="card">
+<img src="img/rangka-baja-ringannn.jpg">
+<h3>Baja Ringan</h3>
+</div>
+
+<div class="card">
+<img src="img/kitchen set 2.jpeg">
+<h3>Kitchen Set</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- GALERI -->
+<section class="section fade" id="galeri">
+
+<h2 class="title">
+Galeri
+</h2>
+
+<div class="filter-btns">
+
+<button onclick="filterKategori('all')">
+Semua
+</button>
+
+<button onclick="filterKategori('kanopi')">
+Kanopi
+</button>
+
+<button onclick="filterKategori('pagar')">
+Pagar
+</button>
+
+<button onclick="filterKategori('railing')">
+railing balkon
+</button>
+
+<button onclick="filterKategori('baja')">
+Baja Ringan
+</button>
+
+<button onclick="filterKategori('kitchen')">
+Kitchen Set
+</button>
+
+</div>
+
+<div class="gallery">
+
+<img src="img/kanop-alderon.jpg" class="kanopi" onclick="openImg(this.src)">
+<img src="img/IMG-20241128-WA0180.jpg" class="kanopi" onclick="openImg(this.src)">
+<img src="img/kanopi-alderon.jpeg" class="kanopi" onclick="openImg(this.src)">
+<img src="img/IMG-20241128-WA0165.jpg" class="kanopi" onclick="openImg(this.src)">
+
+<img src="img/IMG-20241128-WA0042.jpg" class="pagar" onclick="openImg(this.src)">
+<img src="img/pager1.jpg" class="pagar" onclick="openImg(this.src)">
+<img src="img/IMG-20241128-WA0062.jpg" class="pagar" onclick="openImg(this.src)">
+<img src="img/IMG-20241128-WA0001.jpg" class="pagar" onclick="openImg(this.src)">
+<img src="img/pager sultan.png" class="pagar" onclick="openImg(this.src)">
+
+<img src="img/tangga.jpg" class="railing" onclick="openImg(this.src)">
+<img src="img/IMG-20241228-WA0031.jpg" class="railing" onclick="openImg(this.src)">
+<img src="img/IMG-20241228-WA0075.jpg" class="railing" onclick="openImg(this.src)">
+<img src="img/IMG-20241228-WA0074.jpg" class="railing" onclick="openImg(this.src)">
+
+<img src="img/rangka-baja-ringannn.jpg" class="baja" onclick="openImg(this.src)">
+<img src="img/baja-ringan-1.jpeg" class="baja" onclick="openImg(this.src)">
+<img src="img/baja-ringan-2peg.jpeg" class="baja" onclick="openImg(this.src)">
+<img src="img/atap-baja-ringan.jpg" class="baja" onclick="openImg(this.src)">
+
+<img src="img/kitchen set 2.jpeg" class="kitchen" onclick="openImg(this.src)">
+<img src="img/kitchen set 1.jpeg" class="kitchen" onclick="openImg(this.src)">
+<img src="img/kitchen set 3.jpeg" class="kitchen" onclick="openImg(this.src)">
+
+</div>
+
+</section>
+
+<!-- POPUP -->
+<div class="img-popup" id="imgPopup" onclick="closeImg()">
+
+<img id="popupImg">
+
+</div>
+
+<!-- TESTIMONI -->
+<section class="section fade">
+
+<h2 class="title">
+Testimoni
+</h2>
+
+<div class="testi-slider">
+
+<div class="testi active">
+"Pekerjaan sangat rapi dan kuat."
+<br>
+<b>- Budi, Serang</b>
+</div>
+
+<div class="testi">
+"Harga terjangkau hasil premium."
+<br>
+<b>- Pak Ahmad</b>
+</div>
+
+<div class="testi">
+"Admin fast respon dan ramah."
+<br>
+<b>- Ibu Siti</b>
+</div>
+
+</div>
+
+</section>
+
+<!-- MAP -->
+<section class="section fade" id="lokasi">
+
+<h2 class="title">
+Lokasi Kami
+</h2>
+
+<iframe
+src="https://www.google.com/maps?q=Bengkel%20Las%20Harapan%20Mandiri&output=embed">
+</iframe>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+<p>© 2001 - 2026 Bengkel Las Harapan Mandiri</p>
+
+<p>📞 0813-1803-1772</p>
+
+<p>Melayani Jabodetabek</p>
+
+</footer>
+
+<!-- WA FLOAT -->
+<div class="wa-float" onclick="openModal()">
+
+<i class="fab fa-whatsapp"></i>
+
+</div>
+
+<!-- BACK TO TOP -->
+<div class="top-btn" onclick="scrollTopPage()">
+
+<i class="fas fa-arrow-up"></i>
+
+</div>
+
+<!-- MODAL -->
+<div class="modal" id="waModal">
+
+<div class="modal-content">
+
+    <span class="close-modal" onclick="closeModal()">&times;</span>
+
+<h3>Pilih Admin</h3>
+
+<a class="wa-option"
+href="https://wa.me/6287871515458">
+Admin 1
+</a>
+
+<a class="wa-option"
+href="https://wa.me/6285893708873">
+Admin 2
+</a>
+
+<a class="wa-option"
+href="https://wa.me/6281318031772">
+Admin 3
+</a>
+
+<a class="wa-option"
+href="https://wa.me/6283879400110">
+Admin 4
+</a>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
