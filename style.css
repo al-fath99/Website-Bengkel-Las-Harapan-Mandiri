@@ -61,9 +61,19 @@ padding:15px 8%;
 }
 
 .logo{
-font-size:24px;
-font-weight:bold;
-color:#25D366;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    font-size:32px;
+    font-weight:700;
+    color:#2ecc71;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    object-fit:cover;
 }
 
 #menu{
