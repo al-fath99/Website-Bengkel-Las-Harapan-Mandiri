@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://al-fath99.github.io/Website-Bengkel-Las-Harapan-Mandiri/sitemap.xml
