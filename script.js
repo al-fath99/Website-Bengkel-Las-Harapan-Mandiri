@@ -3,9 +3,11 @@
 /* ========================= */
 
 /* LOADER */
-window.onload=function(){
+window.addEventListener("load",()=>{
+
 document.getElementById("loader").style.display="none";
-}
+
+});
 
 /* MENU */
 function toggleMenu(){
@@ -19,15 +21,17 @@ document.getElementById("waModal")
 .style.display="block";
 }
 
-window.onclick=function(e){
+window.addEventListener("click",(e)=>{
 
 const modal=document.getElementById("waModal");
 
 if(e.target==modal){
+
 modal.style.display="none";
-}
 
 }
+
+});
 
 function closeModal(){
 
@@ -132,21 +136,47 @@ behavior:'smooth'
 }
 
 const topBtn = document.querySelector(".top-btn");
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY > 300){
+
+topBtn.style.display="flex";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+});
 
 function showFade(){
 
 fades.forEach(el=>{
 
-const top = el.getBoundingClientRect().top;
+const top=el.getBoundingClientRect().top;
 
 if(top < window.innerHeight - 100){
+
 el.classList.add("show");
+
 }
 
 });
 
 }
 
+
 window.addEventListener("scroll", showFade);
 
 showFade();
+
+document.querySelectorAll("#menu a").forEach(link=>{
+
+link.addEventListener("click",()=>{
+
+document.getElementById("menu").classList.remove("active");
+
+});
+
+});
